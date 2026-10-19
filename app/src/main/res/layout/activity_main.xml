@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F2F4F7">
+
+    <!-- Título de la aplicación. -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GameList"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#202124"
+        android:paddingStart="20dp"
+        android:paddingTop="24dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="4dp" />
+
+    <!-- Subtítulo de la aplicación. -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mis videojuegos favoritos"
+        android:textSize="16sp"
+        android:textColor="#666666"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="12dp" />
+
+    <!-- RecyclerView que mostrará la lista de tarjetas. -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerVideojuegos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingTop="4dp"
+        android:paddingBottom="12dp" />
+
+</LinearLayout>
